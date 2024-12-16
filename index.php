@@ -213,8 +213,8 @@ function impactos2(&$mapa, $impactos) {
         $fila = $impacto[0];
         $columna = $impacto[1];
         
-        if ($mapa[$fila][$columna] == 'C') {
-            $mapa[$fila][$columna] = 'X'; 
+        if ($mapa[$fila][$columna] == 'A') {
+            $mapa[$fila][$columna] = 'C'; 
         }
         if ($mapa[$fila][$columna] == '0') {
             $mapa[$fila][$columna] = 'X';
