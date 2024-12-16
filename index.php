@@ -200,7 +200,7 @@ function calcularPersonasAFectadas($mapa) {
     $totalPersonasAfectadas = 0;
         foreach ($mapa as $fila) {
             foreach ($fila as $celda) {
-              if ($celda == 'A') {
+              if ($celda == 'C') {
             $totalPersonasAfectadas += $habitantesPorKm2;
           }
      }
@@ -233,9 +233,9 @@ function dañototal($mapa){
     $cont2 = 0;
     foreach ($mapa as $fila){ 
        foreach($fila as $casilla){
-           if ($casilla === 'C'){
+           if ($casilla == 'C'){
               $cont1++;}
-           if ($casilla === 'X'){
+           if ($casilla == 'X'){
             $cont2++;}
        }   
    }
